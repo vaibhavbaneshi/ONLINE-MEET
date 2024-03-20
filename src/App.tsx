@@ -12,6 +12,7 @@ import {
 
 import '@stream-io/video-react-sdk/dist/css/styles.css';
 import './styles.css';
+// import {DoctorCard} from "./DoctorCard"
 
 const apiKey = 'mvxc2ac3sygv'; // the API key can be found in the "Credentials" section
 const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiSGFyc2hpdCJ9.kWcdQM0kEKBW6bGO8NMbOAMc4P-v-ALeRAobeGZXIKM'
@@ -20,7 +21,7 @@ const callId = 'firstcall'; // the call id can be found in the "Credentials" sec
 
 const user: User = {
   id: userId,
-  name: 'Hasa',
+  name: 'User',
   image: 'https://i.pinimg.com/originals/8b/fa/44/8bfa44aed55f551de4cb821ce12e739b.jpg',
 };
 
