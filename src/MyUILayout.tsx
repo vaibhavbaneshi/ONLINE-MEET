@@ -15,10 +15,14 @@ export const MyUILayout = () => {
     );
   }
 
+  const handleOnLeave = () => {
+    window.location.href = '/'
+}
+
   return (
     <StreamTheme>
       <SpeakerLayout participantsBarPosition='bottom' />
-      <CallControls />
+      <CallControls onLeave={handleOnLeave} />
     </StreamTheme>
   );
 };
