@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { VideoCall } from "./VideoCall";
 import { StreamVideoClient } from '@stream-io/video-react-sdk';
-import { send } from "./components/Email";
+// import { send } from "./components/Email";
 import axios from "axios";
 
 export default function App(): JSX.Element {
