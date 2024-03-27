@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { VideoCall } from "./VideoCall";
 import { StreamVideoClient } from '@stream-io/video-react-sdk';
 import { send } from "./components/Email";
+import axios from "axios";
 
 export default function App(): JSX.Element {
   const [callId, setCallId] = useState('');
@@ -27,10 +28,17 @@ export default function App(): JSX.Element {
     setError(''); // Clear error message when user starts typing
   }
 
-  const handleResendEmail = (): void => {
-    send({ email, username, callId });
-    // You may want to show a message indicating that the email has been resent
-  }
+  const handleResendEmail = async (): Promise<void> => {
+    try {
+      const response = await axios.post('https://resend-email-ten.vercel.app/');
+  
+      // Handle response if needed
+      console.log('Email sent:', response.data);
+    } catch (error) {
+      // Handle error
+      console.error('Error sending email:', error);
+    }
+  };
 
   const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
