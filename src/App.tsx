@@ -71,11 +71,11 @@ export default function App(): JSX.Element {
   }
 
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-800">
+    <div className="flex justify-center items-center h-screen bg-white">
       {!showVideoCall ? (
         <div className="max-w-md relative flex flex-col p-4 rounded-md text-black bg-white">
-          <img className="-my-4" src="/DoctorPe1.jpeg" alt="DoctorPe Icon" />
-          <div className="text-2xl font-bold mb-2 text-[#1e0e4b] text-center">DoctorPe <span className="text-cyan-500">MEET</span></div>
+          <img className="-my-4" src="./dpe3.jpg" alt="DoctorPe Icon" />
+          <div className="text-2xl font-bold mb-2 text-[#1e0e4b] text-center">Doctorपे <span className="text-cyan-500">MEET</span></div>
           <div className="text-sm font-normal mb-4 text-center text-[#1e0e4b]">Enter the required details</div>
           <form className="flex flex-col gap-3" onSubmit={handleFormSubmit}>
             <div className="block relative">
