@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { VideoCall } from "./VideoCall";
 import { StreamVideoClient } from '@stream-io/video-react-sdk';
-import axios from "axios";
 import InputBox from "./components/Form/InputBox";
 
 export default function App(): JSX.Element {
