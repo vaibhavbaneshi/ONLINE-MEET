@@ -16,7 +16,7 @@ export const MyUILayout = () => {
   }
 
   const handleOnLeave = () => {
-    window.location.href = '/'
+    window.location.href = 'https://doctorpe-frontend.vercel.app/searchDoctor'
 }
 
   return (
